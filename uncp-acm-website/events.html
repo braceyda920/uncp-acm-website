@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — UNCP ACM Chapter</title>
+  <meta name="description" content="Browse upcoming workshops, speaker events, hackathons, and social gatherings hosted by the UNCP ACM Chapter." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-badge">ACM</div>
+      UNCP ACM
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Join Us</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-glow"></div>
+    <div class="container">
+      <div class="section-eyebrow" style="justify-content:center;">Spring 2025</div>
+      <h1>Events &amp; Activities</h1>
+      <p>From coding workshops to career panels, there's always something happening in the UNCP ACM community.</p>
+    </div>
+  </div>
+
+  <!-- FILTER TABS -->
+  <section style="padding: 0 0 40px;">
+    <div class="container">
+      <div class="resources-tabs" id="filterTabs">
+        <button class="tab-btn active" data-filter="all">All Events</button>
+        <button class="tab-btn" data-filter="workshop">Workshops</button>
+        <button class="tab-btn" data-filter="speaker">Speaker Series</button>
+        <button class="tab-btn" data-filter="competition">Competitions</button>
+        <button class="tab-btn" data-filter="social">Social</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS + CALENDAR -->
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="events-layout">
+
+        <!-- Events List -->
+        <div class="events-list" id="eventsList">
+
+          <!-- May 8 -->
+          <div class="event-item reveal" data-category="workshop">
+            <div class="event-date-box">
+              <span class="event-month">May</span>
+              <span class="event-day">08</span>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                <span class="badge badge-workshop">Workshop</span>
+                <span class="badge badge-upcoming">Upcoming</span>
+              </div>
+              <div class="event-title">Intro to Machine Learning with Python</div>
+              <div class="event-meta" style="margin-bottom:10px;">📍 D.F. Lowry Building, Room 204 &nbsp;·&nbsp; 5:00 PM – 7:00 PM</div>
+              <p style="font-size:0.875rem; color:var(--text-body); line-height:1.6;">Learn the fundamentals of ML with scikit-learn and pandas. We'll build a real classifier from scratch. Laptops required — no prior ML experience needed.</p>
+              <div style="margin-top: 14px;">
+                <a href="contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size:0.8rem;">RSVP →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- May 15 -->
+          <div class="event-item reveal" data-category="speaker">
+            <div class="event-date-box">
+              <span class="event-month">May</span>
+              <span class="event-day">15</span>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                <span class="badge badge-upcoming">Speaker</span>
+              </div>
+              <div class="event-title">Career Panel: Women in Tech</div>
+              <div class="event-meta" style="margin-bottom:10px;">📍 UNCP Student Union, Annex B &nbsp;·&nbsp; 4:30 PM – 6:00 PM</div>
+              <p style="font-size:0.875rem; color:var(--text-body); line-height:1.6;">Hear from four industry professionals about navigating careers in software engineering, data science, and product management. Q&A session to follow.</p>
+              <div style="margin-top: 14px;">
+                <a href="contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size:0.8rem;">RSVP →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- May 22 -->
+          <div class="event-item reveal" data-category="social">
+            <div class="event-date-box">
+              <span class="event-month">May</span>
+              <span class="event-day">22</span>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                <span class="badge badge-social">Social</span>
+              </div>
+              <div class="event-title">End-of-Semester Cookout &amp; Game Night</div>
+              <div class="event-meta" style="margin-bottom:10px;">📍 Founders Hall Courtyard &nbsp;·&nbsp; 3:00 PM – 7:00 PM</div>
+              <p style="font-size:0.875rem; color:var(--text-body); line-height:1.6;">Celebrate the end of the semester with food, games, and great company. Bring a friend — everyone's welcome. Food provided for members.</p>
+              <div style="margin-top: 14px;">
+                <a href="contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size:0.8rem;">RSVP →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- June 7 — Hackathon -->
+          <div class="event-item reveal" data-category="competition">
+            <div class="event-date-box">
+              <span class="event-month">Jun</span>
+              <span class="event-day">07</span>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                <span class="badge" style="background:rgba(167,139,250,0.15);color:#a78bfa;border:1px solid rgba(167,139,250,0.3);">Competition</span>
+              </div>
+              <div class="event-title">UNCP Braves Hackathon 2025</div>
+              <div class="event-meta" style="margin-bottom:10px;">📍 Engineering &amp; Computer Science Building &nbsp;·&nbsp; 24 Hours</div>
+              <p style="font-size:0.875rem; color:var(--text-body); line-height:1.6;">Our flagship annual hackathon — 24 hours to build something amazing. Teams of 2–4. Prizes for top three teams. Theme announced at kickoff. Open to all UNCP students.</p>
+              <div style="margin-top: 14px;">
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 18px; font-size:0.8rem;">Register Team →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- June 20 — Web Dev -->
+          <div class="event-item reveal" data-category="workshop">
+            <div class="event-date-box">
+              <span class="event-month">Jun</span>
+              <span class="event-day">20</span>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                <span class="badge badge-workshop">Workshop</span>
+              </div>
+              <div class="event-title">Full-Stack Web Dev Crash Course</div>
+              <div class="event-meta" style="margin-bottom:10px;">📍 D.F. Lowry Building, Room 204 &nbsp;·&nbsp; 10:00 AM – 3:00 PM</div>
+              <p style="font-size:0.875rem; color:var(--text-body); line-height:1.6;">A half-day deep dive into HTML, CSS, JavaScript, and Node.js. You'll leave with a working portfolio page and a foundational understanding of modern web development.</p>
+              <div style="margin-top: 14px;">
+                <a href="contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size:0.8rem;">RSVP →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- August — Fall Kickoff -->
+          <div class="event-item reveal" data-category="social">
+            <div class="event-date-box">
+              <span class="event-month">Aug</span>
+              <span class="event-day">28</span>
+            </div>
+            <div style="flex:1;">
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                <span class="badge badge-social">Social</span>
+                <span class="badge badge-upcoming">Fall 2025</span>
+              </div>
+              <div class="event-title">Fall Semester Kickoff &amp; Info Fair</div>
+              <div class="event-meta" style="margin-bottom:10px;">📍 Pembroke Hall Lobby &nbsp;·&nbsp; 11:00 AM – 2:00 PM</div>
+              <p style="font-size:0.875rem; color:var(--text-body); line-height:1.6;">Welcome back! Meet the ACM officers, learn about the year's events, and sign up for membership. Free food and swag for new members who register on the spot.</p>
+              <div style="margin-top: 14px;">
+                <a href="contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size:0.8rem;">Learn More →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Calendar Widget -->
+        <div class="calendar-widget reveal">
+          <div class="cal-header">
+            <h3 id="calMonthYear">May 2025</h3>
+            <div class="cal-nav">
+              <button id="calPrev" aria-label="Previous month">&#8249;</button>
+              <button id="calNext" aria-label="Next month">&#8250;</button>
+            </div>
+          </div>
+          <div class="cal-grid" id="calGrid">
+            <!-- Populated by JS -->
+          </div>
+          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border);">
+            <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-dim); margin-bottom: 14px;">Legend</div>
+            <div style="display:flex; flex-direction:column; gap:8px;">
+              <div style="display:flex; align-items:center; gap:10px; font-size:0.82rem; color:var(--text-body);">
+                <div style="width:10px;height:10px;border-radius:50%;background:var(--gold);"></div> Event Day
+              </div>
+              <div style="display:flex; align-items:center; gap:10px; font-size:0.82rem; color:var(--text-body);">
+                <div style="width:10px;height:10px;border-radius:50%;background:var(--accent-cyan);"></div> Today
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">UNCP ACM Chapter</div>
+          <p>Association for Computing Machinery — University of North Carolina at Pembroke. Empowering students through technology and community.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ACM</h4>
+          <ul>
+            <li><a href="https://www.acm.org" target="_blank">ACM.org</a></li>
+            <li><a href="https://www.uncp.edu" target="_blank">UNCP.edu</a></li>
+            <li><a href="resources.html">Learning Resources</a></li>
+            <li><a href="contact.html">Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 UNCP ACM Student Chapter. All rights reserved.</p>
+        <p>Made with ❤️ by UNCP students</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>
